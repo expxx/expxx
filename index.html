@@ -125,6 +125,10 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
         </ul>
       </nav>
 
@@ -460,24 +464,205 @@
 
 
 
+
+
       <!--
         - #PORTFOLIO
       -->
 
       <article class="portfolio" data-page="portfolio">
+
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
         </header>
+
         <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Discord Bot</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Minecraft Plugin</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Minestom</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Pterodactyl</button>
+            </li>
+
+          </ul>
+
           <div class="filter-select-box">
+
             <button class="filter-select" data-select>
+
               <div class="select-value" data-selecct-value>Select category</div>
+
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
+
             </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Discord Bot</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Minecraft Plugin</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Minestom</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Pterodactyl</button>
+              </li>
+
+            </ul>
+
           </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="discord bot">
+              <a href="https://builtbybit.com/resources/penguin-licensing-source-code-included.61733/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/penguinlicensing.png" alt="penguinlicensing" loading="lazy">
+                </figure>
+                <h3 class="project-title">Penguin Licensing</h3>
+                <p class="project-category">Discord Bot</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="discord bot">
+              <a href="https://builtbybit.com/resources/the-void-bot.60637/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/thevoidbot.png" alt="thevoidbot" loading="lazy">
+                </figure>
+                <h3 class="project-title">The Void Bot</h3>
+                <p class="project-category">Discord Bot</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="discord bot">
+              <a href="https://builtbybit.com/resources/license-system-tamper-detector-dash.40579/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/atzin.png" alt="atzinlicensing" loading="lazy">
+                </figure>
+                <h3 class="project-title">Atzin License System</h3>
+                <p class="project-category">Discord Bot</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="pterodactyl">
+              <a href="https://builtbybit.com/resources/automation.37282/" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/automation.jpg" alt="automation" loading="lazy">
+                </figure>
+                <h3 class="project-title">System Automation</h3>
+                <p class="project-category">Pterodactyl</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="discord bot">
+              <a href="https://github.com/expxx/Cloud-Licensing" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
+                </figure>
+                <h3 class="project-title">Cloud Licensing System</h3>
+                <p class="project-category">Discord Bot</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="discord bot">
+              <a href="https://github.com/expxx/Discord-WemX-Verification" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
+                </figure>
+                <h3 class="project-title">Discord WemX Verification</h3>
+                <p class="project-category">Discord Bot</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="minestom">
+              <a href="https://github.com/expxx/MinestomInvs" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
+                </figure>
+                <h3 class="project-title">Minestom GUI API</h3>
+                <p class="project-category">Minestom</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="minestom">
+              <a href="https://github.com/expxx/Minestom-Payments" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
+                </figure>
+                <h3 class="project-title">Minestom Tebex/CraftingStore Hook</h3>
+                <p class="project-category">Minestom</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="minecraft plugin">
+              <a href="https://github.com/expxx/Control-Center" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
+                </figure>
+                <h3 class="project-title">Control Center</h3>
+                <p class="project-category">Minecraft Plugin</p>
+              </a>
+            </li>
+
+          </ul>
+
         </section>
+
       </article>
 
     </div>
