@@ -1,695 +1,934 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cam - Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cam - Personal Portfolio</title>
-
-  <!--
+		<!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+		<link
+			rel="shortcut icon"
+			href="./assets/images/logo.ico"
+			type="image/x-icon"
+		/>
 
-  <!--
+		<!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+		<link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+		<!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-<body>
-
-  <!--
+	<body>
+		<!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+		<main>
+			<!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+			<aside class="sidebar" data-sidebar>
+				<div class="sidebar-info">
+					<figure class="avatar-box">
+						<img
+							src="./assets/images/cammyzed-fullbody.png"
+							alt="Cam"
+							width="80"
+						/>
+					</figure>
 
-      <div class="sidebar-info">
+					<div class="info-content">
+						<h1 class="name" title="Cam">Cam M</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/cammyzed-fullbody.png" alt="Cam" width="80">
-        </figure>
+						<p class="title">Sysadmin / Manager</p>
+					</div>
 
-        <div class="info-content">
-          <h1 class="name" title="Cam">Cam M</h1>
+					<button class="info_more-btn" data-sidebar-btn>
+						<span>Show Contacts</span>
 
-          <p class="title">Sysadmin / Manager</p>
-        </div>
+						<ion-icon name="chevron-down"></ion-icon>
+					</button>
+				</div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+				<div class="sidebar-info_more">
+					<div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+					<ul class="contacts-list">
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="mail-outline"></ion-icon>
+							</div>
+							<div class="contact-info">
+								<p class="contact-title">Email</p>
+								<a href="mailto:richard@example.com" class="contact-link"
+									>cam@expx.dev</a
+								>
+							</div>
+						</li>
 
-      </div>
+						<li class="contact-item">
+							<div class="icon-box">
+								<ion-icon name="location-outline"></ion-icon>
+							</div>
+							<div class="contact-info">
+								<p class="contact-title">Discord</p>
+								<address>cammyze</address>
+							</div>
+						</li>
+					</ul>
 
-      <div class="sidebar-info_more">
+					<div class="separator"></div>
 
-        <div class="separator"></div>
+					<ul class="social-list">
+						<li class="social-item">
+							<a href="https://discord.gg/dXvAereRAA" class="social-link">
+								<ion-icon name="logo-discord"></ion-icon>
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="mailto:cam@expx.dev" class="social-link">
+								<ion-icon name="mail-outline"></ion-icon>
+							</a>
+						</li>
+						<li class="social-item">
+							<a href="https://github.com/expxx" class="social-link">
+								<ion-icon name="logo-github"></ion-icon>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</aside>
 
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href="mailto:richard@example.com" class="contact-link">cam@expx.dev</a>
-            </div>
-          </li>
-
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Discord</p>
-              <address>cammyze</address>
-            </div>
-          </li>
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-          <li class="social-item">
-            <a href="https://discord.gg/dXvAereRAA" class="social-link">
-				<ion-icon name="logo-discord"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="mailto:cam@expx.dev" class="social-link">
-				<ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://github.com/expxx" class="social-link">
-				<ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-
-
-
-
-
-    <!--
+			<!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+			<div class="main-content">
+				<!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+				<nav class="navbar">
+					<ul class="navbar-list">
+						<li class="navbar-item">
+							<button class="navbar-link active" data-nav-link>About</button>
+						</li>
+						<li class="navbar-item">
+							<button class="navbar-link" data-nav-link>Resume</button>
+						</li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-        </ul>
-      </nav>
+						<li class="navbar-item">
+							<button class="navbar-link" data-nav-link>Portfolio</button>
+						</li>
+					</ul>
+				</nav>
 
-
-
-
-
-      <!--
+				<!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+				<article class="about active" data-page="about">
+					<header>
+						<h2 class="h2 article-title">About me</h2>
+					</header>
+					<section class="about-text">
+						<p>
+							I'm a Systems Administrator and General Manager from the US, and
+							I'm very passionate about and dedicated to my job. I have a strong
+							background in IT and have been working in the field for over 5
+							years. I have a wide range of skills and experience, including
+							network administration, server management, and technical support.
+						</p>
+						<p>
+							My job is to ensure that all of the systems and networks are
+							running smoothly and efficiently. That way your business can focus
+							on what it does best, and not have to worry about IT issues. I'm
+							always looking for new ways to improve and optimize the systems
+							and networks that I manage, and I'm constantly learning new
+							technologies and techniques to stay ahead of the curve.
+						</p>
+						<p>
+							For the General Management part, I've also been working in the
+							field for over 5 years. I have a wide range of skills and
+							experience, including team management, project management, and
+							strategic planning. I'm always looking for new challenges and
+							opportunities to learn and grow in my career.
+						</p>
+						<p>
+							As a General Manager, I'm responsible for overseeing all aspects
+							of the business, including operations, and human resources. I work
+							closely with the team to ensure that everyone is working towards
+							the same goals and that the business is running smoothly.
+						</p>
+					</section>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-        <section class="about-text">
-          <p>
-            I'm a Systems Administrator and General Manager from the US, and I'm very passionate about and dedicated to my
-			job. I have a strong background in IT and have been working in the field for over 5 years. I have a wide range of
-			skills and experience, including network administration, server management, and technical support.
-          </p>
-          <p>
-            My job is to ensure that all of the systems and networks are running smoothly and efficiently. That way
-			your business can focus on what it does best, and not have to worry about IT issues. I'm always looking for
-			new ways to improve and optimize the systems and networks that I manage, and I'm constantly learning new
-			technologies and techniques to stay ahead of the curve.
-          </p>
-		  <p>
-			For the General Management part, I've also been working in the field for over 5 years. I have a wide range of
-			skills and experience, including team management, project management, and strategic planning. I'm always
-			looking for new challenges and opportunities to learn and grow in my career.
-		  </p>
-		  <p>
-			As a General Manager, I'm responsible for overseeing all aspects of the business, including operations,
-			and human resources. I work closely with the team to ensure that everyone is working towards the same
-			goals and that the business is running smoothly.
-		  </p>
-        </section>
-
-        <!--
+					<!--
           - service
         -->
 
-        <section class="service">
-          <h3 class="h3 service-title">What i'm doing</h3>
-          <ul class="service-list">
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg
-                " alt="design icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">IT Management</h4>
-                <p class="service-item-text">
-					Systems Administration for hire, at the highest quality
-                </p>
-              </div>
-            </li>
+					<section class="service">
+						<h3 class="h3 service-title">What i'm doing</h3>
+						<ul class="service-list">
+							<li class="service-item">
+								<div class="service-icon-box">
+									<img
+										src="./assets/images/icon-app.svg
+                "
+										alt="design icon"
+										width="40"
+									/>
+								</div>
+								<div class="service-content-box">
+									<h4 class="h4 service-item-title">IT Management</h4>
+									<p class="service-item-text">
+										Systems Administration for hire, at the highest quality
+									</p>
+								</div>
+							</li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">MC Development</h4>
-                <p class="service-item-text">
-					High-quality custom plugins for Minecraft, written in yours-truly, Kotlin
-                </p>
-              </div>
-            </li>
+							<li class="service-item">
+								<div class="service-icon-box">
+									<img
+										src="./assets/images/icon-dev.svg"
+										alt="Web development icon"
+										width="40"
+									/>
+								</div>
+								<div class="service-content-box">
+									<h4 class="h4 service-item-title">MC Development</h4>
+									<p class="service-item-text">
+										High-quality custom plugins for Minecraft, written in
+										yours-truly, Kotlin
+									</p>
+								</div>
+							</li>
 
-            <li class="service-item">
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="mobile app icon" width="40">
-              </div>
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">MC General Management</h4>
-                <p class="service-item-text">
-					Staff, Server, etc management for your Minecraft Server
-                </p>
-              </div>
-            </li>
-          </ul>
+							<li class="service-item">
+								<div class="service-icon-box">
+									<img
+										src="./assets/images/icon-design.svg"
+										alt="mobile app icon"
+										width="40"
+									/>
+								</div>
+								<div class="service-content-box">
+									<h4 class="h4 service-item-title">MC General Management</h4>
+									<p class="service-item-text">
+										Staff, Server, etc management for your Minecraft Server
+									</p>
+								</div>
+							</li>
+						</ul>
+					</section>
 
-        </section>
-
-
-        <!--
+					<!--
           - testimonials
         -->
 
-        <section class="testimonials">
+					<section class="testimonials">
+						<h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+						<ul class="testimonials-list has-scrollbar">
+							<li class="testimonials-item">
+								<div class="content-card" data-testimonials-item>
+									<figure class="testimonials-avatar-box">
+										<img
+											src="./assets/images/reviews/veqsa.png"
+											alt="Veqsa's Avatar"
+											width="60"
+											data-testimonials-avatar
+											style="border-radius: 20px"
+										/>
+									</figure>
+									<h4
+										class="h4 testimonials-item-title"
+										data-testimonials-title
+									>
+										Veqsa
+									</h4>
+									<div class="testimonials-text" data-testimonials-text>
+										<p>
+											Cam is an outstanding General Manager and Systems
+											Administrator! He offered invaluable help with the
+											infrastructure of my hosting, and within just a few hours,
+											he revamped almost everything in a far better way than I
+											had before. Not only that, he consistently responds
+											quickly and always thinks of the best solutions to any
+											challenges.
+											<br /><br />
+											Cam has even taught me a few new things about System
+											Administration along the way. I'm genuinely glad I hired
+											him, and I’ll always appreciate his expertise and
+											dedication.
+											<br /><br />
+											Thank you, Cam!
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="testimonials-item">
+								<div class="content-card" data-testimonials-item>
+									<figure class="testimonials-avatar-box">
+										<img
+											src="./assets/images/reviews/thebestpenguin.png"
+											alt="TheBestPenguin's Avatar"
+											width="60"
+											data-testimonials-avatar
+											style="border-radius: 20px"
+										/>
+									</figure>
+									<h4
+										class="h4 testimonials-item-title"
+										data-testimonials-title
+									>
+										Nathaniel W.
+									</h4>
+									<div class="testimonials-text" data-testimonials-text>
+										<p>
+											Cam has been a key contributor to the success of Tsunami
+											Development. As a system administrator, his experience and
+											dedication have been crucial in bringing many of our
+											projects to life. His reliability, technical skill, and
+											commitment to growth makes him an amazing part of the
+											team. I highly recommend Cam to anyone in need of a
+											skilled and dependable system administrator.
+											<br /><br />
+											— Nathaniel, Owner of Tsunami Development
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="testimonials-item">
+								<div class="content-card" data-testimonials-item>
+									<figure class="testimonials-avatar-box">
+										<img
+											src="./assets/images/reviews/jayjfn.png"
+											alt="JayJFN's Avatar"
+											width="60"
+											data-testimonials-avatar
+											style="border-radius: 20px"
+										/>
+									</figure>
+									<h4
+										class="h4 testimonials-item-title"
+										data-testimonials-title
+									>
+										Jay J.
+									</h4>
+									<div class="testimonials-text" data-testimonials-text>
+										<p>
+											Cam, our systems administrator/manager, is outstanding.
+											His expertise in troubleshooting and systems management is
+											impressive, and he addresses issues quickly and calmly. He
+											proactively prevents problems and explains technical
+											concepts clearly, improving collaboration. Cam’s positive
+											attitude and teamwork make him a pleasure to work with. I
+											highly recommend him for any systems administration role!
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="testimonials-item">
+								<div class="content-card" data-testimonials-item>
+									<figure class="testimonials-avatar-box">
+										<img
+											src="./assets/images/reviews/jggunter.png"
+											alt="JGGunter's Avatar"
+											width="60"
+											data-testimonials-avatar
+											style="border-radius: 20px"
+										/>
+									</figure>
+									<h4
+										class="h4 testimonials-item-title"
+										data-testimonials-title
+									>
+										Josh
+									</h4>
+									<div class="testimonials-text" data-testimonials-text>
+										<p>
+											Cam is the most talented, hardworking, and persistent
+											System Administrator I know. In the time I have known him,
+											he has taken on, completed, and excelled in a multitude of
+											diverse projects. He is truly one of the most valuable
+											people to have as a contact.
+										</p>
+									</div>
+								</div>
+							</li>
+							<li class="testimonials-item">
+								<div class="content-card" data-testimonials-item>
+									<figure class="testimonials-avatar-box">
+										<img
+											src="./assets/images/question.png"
+											alt="Care to share?"
+											width="60"
+											data-testimonials-avatar
+										/>
+									</figure>
+									<h4
+										class="h4 testimonials-item-title"
+										data-testimonials-title
+									>
+										Care to Share?
+									</h4>
+									<div class="testimonials-text" data-testimonials-text>
+										<p>
+											Have you used me before? Care to share an experience?
+											Shoot me a DM or Email and I'll add it!
+										</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</section>
 
-          <ul class="testimonials-list has-scrollbar">
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/reviews/veqsa.png" alt="Veqsa's Avatar" width="60" data-testimonials-avatar style="border-radius: 20px;">
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Veqsa</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Cam is an outstanding General Manager and Systems Administrator! He offered invaluable help with the infrastructure of my hosting, and within just a few hours, he revamped almost everything in a far better way than I had before. Not only that, he consistently responds quickly and always thinks of the best solutions to any challenges.
-                    <br /><br />
-                    Cam has even taught me a few new things about System Administration along the way. I'm genuinely glad I hired him, and I’ll always appreciate his expertise and dedication.
-                    <br /><br />
-                    Thank you, Cam!
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/reviews/thebestpenguin.png" alt="TheBestPenguin's Avatar" width="60" data-testimonials-avatar style="border-radius: 20px;">
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Nathaniel W.</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Cam has been a key contributor to the success of Tsunami Development. As a system administrator, his experience and dedication have been crucial in bringing many of our projects to life. His reliability, technical skill, and commitment to growth makes him an amazing part of the team. I highly recommend Cam to anyone in need of a skilled and dependable system administrator.
-                    <br /><br />
-                    — Nathaniel, Owner of Tsunami Development
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/reviews/jayjfn.png" alt="JayJFN's Avatar" width="60" data-testimonials-avatar style="border-radius: 20px;">
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jay J.</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Cam, our systems administrator/manager, is outstanding. His expertise in troubleshooting and systems management is impressive, and he addresses issues quickly and calmly. 
-
-                    He proactively prevents problems and explains technical concepts clearly, improving collaboration. Cam’s positive attitude and teamwork make him a pleasure to work with. I highly recommend him for any systems administration role!
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/reviews/jggunter.png" alt="JGGunter's Avatar" width="60" data-testimonials-avatar style="border-radius: 20px;">
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Josh</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Cam is the most talented, hardworking, and persistent System Administrator I know. In the time I have known him, he has taken on, completed, and excelled in a multitude of diverse projects. He is truly one of the most valuable people to have as a contact.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/question.png" alt="Care to share?" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Care to Share?</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-					          Have you used me before? Care to share an experience? Shoot me a DM or Email and I'll add it!
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-
-        <!--
+					<!--
           - testimonials modal
         -->
 
-        <div class="modal-container" data-modal-container>
+					<div class="modal-container" data-modal-container>
+						<div class="overlay" data-overlay></div>
 
-          <div class="overlay" data-overlay></div>
+						<section class="testimonials-modal">
+							<button class="modal-close-btn" data-modal-close-btn>
+								<ion-icon name="close-outline"></ion-icon>
+							</button>
 
-          <section class="testimonials-modal">
+							<div class="modal-img-wrapper">
+								<figure class="modal-avatar-box">
+									<img
+										src="./assets/images/avatar-1.png"
+										alt="Daniel lewis"
+										width="80"
+										data-modal-img
+									/>
+								</figure>
 
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
+								<img src="./assets/images/icon-quote.svg" alt="quote icon" />
+							</div>
 
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
+							<div class="modal-content">
+								<h4 class="h3 modal-title" data-modal-title>NERD</h4>
 
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
+								<div data-modal-text>
+									<p>nerd, bug found!</p>
+								</div>
+							</div>
+						</section>
+					</div>
 
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>NERD</h4>
-
-              <div data-modal-text>
-                <p>
-                  nerd, bug found!
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-        <!--
+					<!--
           - clients
         -->
 
-        <section class="clients">
+					<section class="clients">
+						<h3 class="h3 clients-title">Clients</h3>
 
-          <h3 class="h3 clients-title">Clients</h3>
+						<ul class="clients-list has-scrollbar">
+							<li class="clients-item">
+								<a href="#">
+									<img
+										src="./assets/images/clients/createnow.png"
+										style="max-height: 300px; max-width: 300px"
+										alt="client logo"
+									/>
+								</a>
+							</li>
+							<li class="clients-item">
+								<a href="https://clouded.gg">
+									<img
+										src="./assets/images/clients/clouded.png"
+										style="max-height: 200px; max-width: 300px"
+										alt="client logo"
+									/>
+								</a>
+							</li>
+						</ul>
+					</section>
+				</article>
 
-          <ul class="clients-list has-scrollbar">
-            <li class="clients-item">
-              <a href="#"> <img src="./assets/images/clients/createnow.png" style="max-height: 300px; max-width: 300px;" alt="client logo"> </a>
-            </li>
-            <li class="clients-item">
-              <a href="https://clouded.gg"> <img src="./assets/images/clients/clouded.png" style="max-height: 200px; max-width: 300px;" alt="client logo"> </a>
-            </li>
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+				<!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+				<article class="resume" data-page="resume">
+					<header>
+						<h2 class="h2 article-title">Resume</h2>
+					</header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+					<section class="timeline">
+						<div class="title-wrapper">
+							<div class="icon-box">
+								<ion-icon name="book-outline"></ion-icon>
+							</div>
+							<h3 class="h3">Experience</h3>
+						</div>
+						<ol class="timeline-list">
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									MineStudio - General Manager & Developer
+								</h4>
+								<span>December 2024 — Present</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									StealCadia - General Manager
+								</h4>
+								<span>November 2024 — December 2024</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									Clouded - General Manager & Developer
+								</h4>
+								<span>November 2024 — January 2025</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									CloudyNodes - Systems Administrator
+								</h4>
+								<span>September 2024 — January 2025</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									CreateNow - Systems Administrator
+								</h4>
+								<span>December 2023 — May 2024</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									OdysseyNodes LLC - Systems Administrator
+								</h4>
+								<span>December 2023 — March 2024</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">XBeyond - Developer</h4>
+								<span>November 2023 — January 2024</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									OrbitNode LLC - Systems Administrator
+								</h4>
+								<span>November 2022 - January 2023</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									Tsunami Development - Systems Administrator
+								</h4>
+								<span>July 2022 — Present</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									SeaNodes - Systems Administrator
+								</h4>
+								<span>May 2022 — January 2023</span>
+							</li>
+							<li class="timeline-item">
+								<h4 class="h4 timeline-item-title">
+									Frozen Hosting - Operating Manager
+								</h4>
+								<span>May 2022 - Nov 2023</span>
+							</li>
+						</ol>
+					</section>
 
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Experience</h3>
-          </div>
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">MineStudio - General Manager & Developer</h4>
-              <span>December 2024 — Present</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">StealCadia - General Manager</h4>
-              <span>November 2024 — December 2024</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Clouded - General Manager & Developer</h4>
-              <span>November 2024 — January 2025</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CloudyNodes - Systems Administrator</h4>
-              <span>September 2024 — January 2025</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CreateNow - Systems Administrator</h4>
-              <span>December 2023 — May 2024</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">OdysseyNodes LLC - Systems Administrator</h4>
-              <span>December 2023 — March 2024</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">XBeyond - Developer</h4>
-              <span>November 2023 — January 2024</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">OrbitNode LLC - Systems Administrator</h4>
-              <span>November 2022 - January 2023</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Tsunami Development - Systems Administrator</h4>
-              <span>July 2022 — Present</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">SeaNodes - Systems Administrator</h4>
-              <span>May 2022 — January 2023</span>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Frozen Hosting - Operating Manager</h4>
-              <span>May 2022 - Nov 2023</span>
-            </li>
-          </ol>
-        </section>
+					<section class="skill">
+						<h3 class="h3 skills-title">My skills</h3>
+						<ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper" style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <h5 class="h5" style="margin-bottom: 2px;">Systems Administration</h5>
+                    <span style="font-size: 0.92em; color: #888; display: block; margin-top: 2px;">
+                      Linux, Windows, Networking, Security, Automation, Monitoring, Troubleshooting
+                    </span>
+                  </div>
+                  <data value="79" style="font-size: 1.1em; font-weight: 600; margin-left: 16px;">79%</data>
+                </div>
+                <div class="skill-progress-bg" style="margin-top: 8px;">
+                  <div class="skill-progress-fill" style="width: 79%"></div>
+                </div>
+              </li>
 
-        <section class="skill">
-          <h3 class="h3 skills-title">My skills</h3>
-          <ul class="skills-list content-card">
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">Systems Administration</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
-            <li class="skills-item">
-              <div class="title-wrapper">
-                <h5 class="h5">General Management</h5>
-                <data value="70">70%</data>
-              </div>
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper" style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <h5 class="h5" style="margin-bottom: 2px;">Pterodactyl Framework</h5>
+                    <span style="font-size: 0.92em; color: #888; display: block; margin-top: 2px;">
+                      Wings, Node Balancing, Custom Addons, Custom Wings, Troubleshooting
+                    </span>
+                  </div>
+                  <data value="90" style="font-size: 1.1em; font-weight: 600; margin-left: 16px;">90%</data>
+                </div>
+                <div class="skill-progress-bg" style="margin-top: 8px;">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
+              </li>
 
-          </ul>
+              <li class="skills-item">
+                <div class="title-wrapper" style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <h5 class="h5" style="margin-bottom: 2px;">NodeJS</h5>
+                    <span style="font-size: 0.92em; color: #888; display: block; margin-top: 2px;">
+                      Discord.js, Express, Socket.io, routing-controllers, TypeScript
+                    </span>
+                  </div>
+                  <data value="82" style="font-size: 1.1em; font-weight: 600; margin-left: 16px;">82%</data>
+                </div>
+                <div class="skill-progress-bg" style="margin-top: 8px;">
+                  <div class="skill-progress-fill" style="width: 82%"></div>
+                </div>
+              </li>
 
-        </section>
+              <li class="skills-item">
+                <div class="title-wrapper" style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <h5 class="h5" style="margin-bottom: 2px;">Human Resources</h5>
+                    <span style="font-size: 0.92em; color: #888; display: block; margin-top: 2px;">
+                      Hiring, Training, Team Management, Conflict Resolution, Performance Management
+                    </span>
+                  </div>
+                  <data value="64" style="font-size: 1.1em; font-weight: 600; margin-left: 16px;">64%</data>
+                </div>
+                <div class="skill-progress-bg" style="margin-top: 8px;">
+                  <div class="skill-progress-fill" style="width: 64%"></div>
+                </div>
+              </li>
 
-      </article>
+              <li class="skills-item">
+                <div class="title-wrapper" style="display: flex; align-items: center; justify-content: space-between;">
+                  <div>
+                    <h5 class="h5" style="margin-bottom: 2px;">Customer Service</h5>
+                    <span style="font-size: 0.92em; color: #888; display: block; margin-top: 2px;">
+                      Communication, Problem Solving, Empathy, Active Listening, Conflict Resolution
+                    </span>
+                  </div>
+                  <data value="60" style="font-size: 1.1em; font-weight: 600; margin-left: 16px;">60%</data>
+                </div>
+                <div class="skill-progress-bg" style="margin-top: 8px;">
+                  <div class="skill-progress-fill" style="width: 60%"></div>
+                </div>
+              </li>
+						</ul>
+					</section>
+				</article>
 
-
-
-
-
-
-
-      <!--
+				<!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+				<article class="portfolio" data-page="portfolio">
+					<header>
+						<h2 class="h2 article-title">Portfolio</h2>
+					</header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
+					<section class="projects">
+						<ul class="filter-list">
+							<li class="filter-item">
+								<button class="active" data-filter-btn>All</button>
+							</li>
 
-        <section class="projects">
+							<li class="filter-item">
+								<button data-filter-btn>Discord Bot</button>
+							</li>
 
-          <ul class="filter-list">
+							<li class="filter-item">
+								<button data-filter-btn>Minecraft Plugin</button>
+							</li>
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
+							<li class="filter-item">
+								<button data-filter-btn>Minestom</button>
+							</li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Discord Bot</button>
-            </li>
+							<li class="filter-item">
+								<button data-filter-btn>Pterodactyl</button>
+							</li>
+						</ul>
 
-            <li class="filter-item">
-              <button data-filter-btn>Minecraft Plugin</button>
-            </li>
+						<div class="filter-select-box">
+							<button class="filter-select" data-select>
+								<div class="select-value" data-selecct-value>
+									Select category
+								</div>
 
-            <li class="filter-item">
-              <button data-filter-btn>Minestom</button>
-            </li>
+								<div class="select-icon">
+									<ion-icon name="chevron-down"></ion-icon>
+								</div>
+							</button>
 
-            <li class="filter-item">
-              <button data-filter-btn>Pterodactyl</button>
-            </li>
+							<ul class="select-list">
+								<li class="select-item">
+									<button data-select-item>All</button>
+								</li>
 
-          </ul>
+								<li class="select-item">
+									<button data-select-item>Discord Bot</button>
+								</li>
 
-          <div class="filter-select-box">
+								<li class="select-item">
+									<button data-select-item>Minecraft Plugin</button>
+								</li>
 
-            <button class="filter-select" data-select>
+								<li class="select-item">
+									<button data-select-item>Minestom</button>
+								</li>
 
-              <div class="select-value" data-selecct-value>Select category</div>
+								<li class="select-item">
+									<button data-select-item>Pterodactyl</button>
+								</li>
+							</ul>
+						</div>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
+						<ul class="project-list">
+							<li
+								class="project-item active"
+								data-filter-item
+								data-category="discord bot"
+							>
+								<a
+									href="https://builtbybit.com/resources/penguin-licensing-source-code-included.61733/"
+									target="_blank"
+								>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img
+											src="./assets/images/penguinlicensing.png"
+											alt="penguinlicensing"
+											loading="lazy"
+										/>
+									</figure>
+									<h3 class="project-title">Penguin Licensing</h3>
+									<p class="project-category">Discord Bot</p>
+								</a>
+							</li>
 
-            </button>
+							<li
+								class="project-item active"
+								data-filter-item
+								data-category="discord bot"
+							>
+								<a
+									href="https://builtbybit.com/resources/the-void-bot.60637/"
+									target="_blank"
+								>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img
+											src="./assets/images/thevoidbot.png"
+											alt="thevoidbot"
+											loading="lazy"
+										/>
+									</figure>
+									<h3 class="project-title">The Void Bot</h3>
+									<p class="project-category">Discord Bot</p>
+								</a>
+							</li>
 
-            <ul class="select-list">
+							<li
+								class="project-item active"
+								data-filter-item
+								data-category="discord bot"
+							>
+								<a
+									href="https://builtbybit.com/resources/license-system-tamper-detector-dash.40579/"
+									target="_blank"
+								>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img
+											src="./assets/images/atzin.png"
+											alt="atzinlicensing"
+											loading="lazy"
+										/>
+									</figure>
+									<h3 class="project-title">Atzin License System</h3>
+									<p class="project-category">Discord Bot</p>
+								</a>
+							</li>
 
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
+							<li
+								class="project-item active"
+								data-filter-item
+								data-category="pterodactyl"
+							>
+								<a
+									href="https://builtbybit.com/resources/automation.37282/"
+									target="_blank"
+								>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img
+											src="./assets/images/automation.jpg"
+											alt="automation"
+											loading="lazy"
+										/>
+									</figure>
+									<h3 class="project-title">System Automation</h3>
+									<p class="project-category">Pterodactyl</p>
+								</a>
+							</li>
 
-              <li class="select-item">
-                <button data-select-item>Discord Bot</button>
-              </li>
+							<li
+								class="project-item active"
+								data-filter-item
+								data-category="discord bot"
+							>
+								<a
+									href="https://github.com/expxx/Cloud-Licensing"
+									target="_blank"
+								>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img
+											src="./assets/images/unknown.png"
+											alt="no-logo"
+											loading="lazy"
+										/>
+									</figure>
+									<h3 class="project-title">Cloud Licensing System</h3>
+									<p class="project-category">Discord Bot</p>
+								</a>
+							</li>
 
-              <li class="select-item">
-                <button data-select-item>Minecraft Plugin</button>
-              </li>
+							<li
+								class="project-item active"
+								data-filter-item
+								data-category="discord bot"
+							>
+								<a
+									href="https://github.com/expxx/Discord-WemX-Verification"
+									target="_blank"
+								>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img
+											src="./assets/images/unknown.png"
+											alt="no-logo"
+											loading="lazy"
+										/>
+									</figure>
+									<h3 class="project-title">Discord WemX Verification</h3>
+									<p class="project-category">Discord Bot</p>
+								</a>
+							</li>
 
-              <li class="select-item">
-                <button data-select-item>Minestom</button>
-              </li>
+							<li
+								class="project-item active"
+								data-filter-item
+								data-category="minestom"
+							>
+								<a href="https://github.com/expxx/MinestomInvs" target="_blank">
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img
+											src="./assets/images/unknown.png"
+											alt="no-logo"
+											loading="lazy"
+										/>
+									</figure>
+									<h3 class="project-title">Minestom GUI API</h3>
+									<p class="project-category">Minestom</p>
+								</a>
+							</li>
 
-              <li class="select-item">
-                <button data-select-item>Pterodactyl</button>
-              </li>
+							<li
+								class="project-item active"
+								data-filter-item
+								data-category="minestom"
+							>
+								<a
+									href="https://github.com/expxx/Minestom-Payments"
+									target="_blank"
+								>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img
+											src="./assets/images/unknown.png"
+											alt="no-logo"
+											loading="lazy"
+										/>
+									</figure>
+									<h3 class="project-title">
+										Minestom Tebex/CraftingStore Hook
+									</h3>
+									<p class="project-category">Minestom</p>
+								</a>
+							</li>
 
-            </ul>
+							<li
+								class="project-item active"
+								data-filter-item
+								data-category="minecraft plugin"
+							>
+								<a
+									href="https://github.com/expxx/Control-Center"
+									target="_blank"
+								>
+									<figure class="project-img">
+										<div class="project-item-icon-box">
+											<ion-icon name="eye-outline"></ion-icon>
+										</div>
+										<img
+											src="./assets/images/unknown.png"
+											alt="no-logo"
+											loading="lazy"
+										/>
+									</figure>
+									<h3 class="project-title">Control Center</h3>
+									<p class="project-category">Minecraft Plugin</p>
+								</a>
+							</li>
+						</ul>
+					</section>
+				</article>
+			</div>
+		</main>
 
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item active" data-filter-item data-category="discord bot">
-              <a href="https://builtbybit.com/resources/penguin-licensing-source-code-included.61733/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/penguinlicensing.png" alt="penguinlicensing" loading="lazy">
-                </figure>
-                <h3 class="project-title">Penguin Licensing</h3>
-                <p class="project-category">Discord Bot</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="discord bot">
-              <a href="https://builtbybit.com/resources/the-void-bot.60637/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/thevoidbot.png" alt="thevoidbot" loading="lazy">
-                </figure>
-                <h3 class="project-title">The Void Bot</h3>
-                <p class="project-category">Discord Bot</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="discord bot">
-              <a href="https://builtbybit.com/resources/license-system-tamper-detector-dash.40579/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/atzin.png" alt="atzinlicensing" loading="lazy">
-                </figure>
-                <h3 class="project-title">Atzin License System</h3>
-                <p class="project-category">Discord Bot</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="pterodactyl">
-              <a href="https://builtbybit.com/resources/automation.37282/" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/automation.jpg" alt="automation" loading="lazy">
-                </figure>
-                <h3 class="project-title">System Automation</h3>
-                <p class="project-category">Pterodactyl</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="discord bot">
-              <a href="https://github.com/expxx/Cloud-Licensing" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
-                </figure>
-                <h3 class="project-title">Cloud Licensing System</h3>
-                <p class="project-category">Discord Bot</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="discord bot">
-              <a href="https://github.com/expxx/Discord-WemX-Verification" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
-                </figure>
-                <h3 class="project-title">Discord WemX Verification</h3>
-                <p class="project-category">Discord Bot</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="minestom">
-              <a href="https://github.com/expxx/MinestomInvs" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
-                </figure>
-                <h3 class="project-title">Minestom GUI API</h3>
-                <p class="project-category">Minestom</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="minestom">
-              <a href="https://github.com/expxx/Minestom-Payments" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
-                </figure>
-                <h3 class="project-title">Minestom Tebex/CraftingStore Hook</h3>
-                <p class="project-category">Minestom</p>
-              </a>
-            </li>
-
-            <li class="project-item active" data-filter-item data-category="minecraft plugin">
-              <a href="https://github.com/expxx/Control-Center" target="_blank">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/unknown.png" alt="no-logo" loading="lazy">
-                </figure>
-                <h3 class="project-title">Control Center</h3>
-                <p class="project-category">Minecraft Plugin</p>
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+		<!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+		<script src="./assets/js/script.js"></script>
 
-  <!--
+		<!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+	</body>
 </html>
